@@ -10,7 +10,7 @@ Author URI: http://mfjohansson.nu
 
 include 'functions.php';
 
-add_action('init', '41q_pages', -1);
+add_action('init', 'q41q_pages', -1);
 register_activation_hook(__FILE__, 'active');
 register_deactivation_hook(__FILE__, 'deactive');
 

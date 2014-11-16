@@ -1,6 +1,6 @@
 <?php
 
-function 41q_pages() {
+function q41q_pages() {
 	global $wp_rewrite;
 	if (!strpos($wp_rewrite->get_page_permastruct(), '.41q')){
 		$wp_rewrite->page_structure = $wp_rewrite->page_structure . '.41q';
