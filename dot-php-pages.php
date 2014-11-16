@@ -10,7 +10,7 @@ Author URI: http://mfjohansson.nu
 
 include 'functions.php';
 
-add_action('init', 'php_pages', -1);
+add_action('init', '41q_pages', -1);
 register_activation_hook(__FILE__, 'active');
 register_deactivation_hook(__FILE__, 'deactive');
 
@@ -24,6 +24,6 @@ function active()  {
 
 function deactive() {
 	global $wp_rewrite;
-	$wp_rewrite->page_structure = str_replace(".41q","",$wp_rewrite->page_structure);
+	$wp_rewrite->page_structure = str_replace('.41q', '', $wp_rewrite->page_structure);
 	$wp_rewrite->flush_rules();
 }
